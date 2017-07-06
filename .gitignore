@@ -35,6 +35,7 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.exe
 *.unitypackage
 
 ### VisualStudioCode ###
