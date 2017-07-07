@@ -13,6 +13,7 @@ public class AddPlayer : MonoBehaviour {
 		players = new List<Player>();
 		y = gameObject.GetComponent<RectTransform>().rect.height/2 - 50f;
 		index = 1;
+		Screen.fullScreen = !Screen.fullScreen;
 	}
 	public void Clicked(){
 		GameObject temp = Instantiate(playerUI, new Vector3(0f, y, 0f), Quaternion.identity);
