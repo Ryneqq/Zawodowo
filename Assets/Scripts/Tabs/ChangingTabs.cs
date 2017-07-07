@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ChangingTabs : MonoBehaviour {
@@ -17,6 +15,7 @@ public class ChangingTabs : MonoBehaviour {
 			KlubyTab = false;
 			ZawodnicyContent.SetActive(true);
 			KlubyContent.SetActive(false);
+			gameObject.GetComponent<SelectedTab>().ZawodnicySelected();
 		}
 	}
 
@@ -26,6 +25,7 @@ public class ChangingTabs : MonoBehaviour {
 			ZawodnicyTab = false;
 			KlubyContent.SetActive(true);
 			ZawodnicyContent.SetActive(false);
+			gameObject.GetComponent<SelectedTab>().KlubySelected();
 		}
 	}
 }
